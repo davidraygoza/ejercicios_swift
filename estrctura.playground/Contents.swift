@@ -9,6 +9,9 @@ struct Automovil{
         self.marca=marca
         self.precio=precio
     }
+    func obtenerDescripcion( ) -> String{
+        return "marca: \(marca) precio: \(precio)"
+    }
 }
 
 var auto = Automovil(marca: "vocho", precio: 185000.30)
@@ -16,4 +19,4 @@ auto.marca
 auto.precio
 auto.precio=255555.00
 auto.precio
-
+auto.obtenerDescripcion()
